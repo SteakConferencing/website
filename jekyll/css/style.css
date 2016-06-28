@@ -1,0 +1,146 @@
+---
+---
+
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Oswald Regular'), local('Oswald-Regular'), url({{ site.baseurl }}/css/oswald.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+@font-face {
+  font-family: 'Marvel';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Marvel'), local('Marvel-Regular'), url({{ site.baseurl }}/css/marvel.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+html {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+
+body {
+  display: flex;
+  flex-direction: column;
+
+  background-color: #FFFFFF;
+  color: #424242;
+  margin: auto;
+  border: 0;
+  max-width: 60em;
+}
+
+.menu {
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+  padding-left: 1em;
+  color: lightgray;
+  background-color: #000000;
+}
+
+.menu nav {
+}
+
+.menu a {
+  line-height: 1.75;
+
+  color: lightgray;
+  text-decoration: none;
+}
+
+.content {
+  flex: 1;
+  font-family: 'Marvel', sans-serif;
+  font-size: 1.1em;
+  text-align: justify;
+
+  max-width: 38rem;
+  min-height: 100%;
+
+  padding-top: 3rem;
+  padding-bottom: 4rem;
+  padding-left:  1rem;
+  padding-right: 4rem;
+  margin-left:  auto;
+  margin-right: auto;
+
+  background-color: #F2F2F2;
+}
+
+.content h3 {
+  font-size: 1.1em;
+  margin-bottom: -0.5em;
+}
+
+.content a {
+  color: #424242;
+  font-variant: small-caps;
+  text-decoration: none;
+}
+
+.footnotes::before {
+  content: "Footnotes";
+}
+
+.project_title {
+  font-variant: small-caps;
+  letter-spacing: 0.07em;
+}
+
+@media (min-width: 0em) {
+  body {
+    background-color: #F2F2F2;
+  }
+}
+
+.backtotop > a:nth-child(1) {
+  display: none;
+}
+
+
+@media (min-width: 48em) {
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    background-color: #FFFFFF;
+  }
+
+  .menu {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+
+    width: 20rem;
+
+    margin: 0;
+
+    text-align: left;
+  }
+
+  .menu > div {
+    position: absolute;
+    top: 10%;
+  }
+
+  .content {
+    height: 100%;
+    min-width: 35rem;
+    max-width: 38rem;
+    padding-left: 24rem;
+    margin-right: auto;
+  }
+
+  .backtotop > a:nth-child(1) {
+     display: initial;
+   }
+
+  .backtotop > a:nth-child(2) {
+    display: none;
+  }
+}

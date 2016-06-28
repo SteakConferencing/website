@@ -1,0 +1,10 @@
+title: "The STEAK Project"
+
+url: "http://www.steakconferencing.de"
+baseurl: ""
+
+safe: true
+
+highlighter: pygments
+markdown: kramdown
+encoding: utf-8

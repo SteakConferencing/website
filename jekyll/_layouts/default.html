@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+  <meta name="author" contents="Dennis Guse and Frank Haase">
+  <meta name="date" content='{{ page.date | date: "%-d %B %Y" }}'>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <link rel="icon" type="image/svg+xml" href="{{ site.baseurl }}/images/steak-logo-centered.svg">
+  <link rel="icon" type="image/x-icon" href="{{ site.baseurl }}/images/steak-logo-centered.png">
+
+
+  <title> {{ site.title }}: {{ page.title }}</title>
+  <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/style.css"></link>
+  <style>
+.initialAnimation {
+position: fixed;
+padding: 0;
+margin: 0;
+top: 0;
+left:0;
+width: 100%;
+height: 100%;
+
+background-image: url("{{ site.baseurl }}/images/steak-logo.svg");
+background-repeat:no-repeat;
+background-position: center;
+background-size:80%;
+opacity:0;
+
+animation-name: initialAnimation;
+animation-duration: 4s;
+animation-fill-mode: forwards;
+}
+@keyframes initialAnimation {
+    0%   {opacity:1;background-color: red;}
+    25%  {opacity:1;background-color: yellow;}
+    50%  {opacity:1;background-color: blue;}
+    99%  {opacity:0;background-color: green;height:100%;width:100%;}
+    100% {height:0px;width:0px}
+}
+</style>
+</head>
+
+<body>
+<div class="menu" id="menu">
+  <div>
+    <h1 class="project_title">
+       <a href="{{ site.baseurl }}/">
+         <img src="{{ site.baseurl }}/images/steak-logo.svg" alt="Logo" style="width:80%;top:10%" /><br />
+         STEAK <p style="font-size: small">Spatial TelephonE conferencing for AsterisK</p>
+       </a>
+    </h1>
+    <br />
+
+    <nav><a href="{{ site.baseurl }}/news#content">News</a></nav>
+    <nav><a href="{{ site.baseurl }}/project#content">The Project</a></nav>
+    <nav><a href="{{ site.baseurl }}/motivation#content">The Motivation</a></nav>
+    <nav><a href="{{ site.baseurl }}/advantages#content">The Advantages</a></nav>
+    <nav><a href="{{ site.baseurl }}/theory#content">The Theory of Spatial Rendering</a></nav>
+    <nav><a href="{{ site.baseurl }}/implementation#content">The Implementation</a></nav>
+    <nav><s><a href="{{ site.baseurl }}/demo#content">The Demo</a></s></nav>
+    <nav><s><a href="{{ site.baseurl }}/experiments#content">The Experiments</a></s></nav>
+    <nav><a href="{{ site.baseurl }}/faq#content">The FAQ</a></nav>
+    <nav><a href="{{ site.baseurl }}/about#content">About</a></nav>
+
+    <br />
+    <div>
+      <s>&copy; {{ site.time | date: "%Y" }}. All rights reserved.</s>&nbsp;
+      <a href="https://creativecommons.org/"><img src="{{ site.baseurl }}/images/license.svg" alt="CC-BY-SA 4.0" style="height: 1em"></a>
+    </div>
+  </div>
+</div>
+
+<div class="content" id="content">
+  <div style="margin-bottom: 3em; font-size: 0.75em; text-align: center;"> --- {{ page.date | date: "%-d %B %Y" }} --- </div>
+
+  {{ content }}
+
+  <div style="text-align: center;" class="backtotop"><a href="#content">↩</a><a href="#menu">↩</a></div>
+</div>
+
+</body>
+</html>

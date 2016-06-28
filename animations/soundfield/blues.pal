@@ -1,0 +1,35 @@
+# line styles for ColorBrewer Blues
+# for use with sequential data
+# provides 8 blue colors of increasing saturation
+# compatible with gnuplot >=4.2
+# author: Anna Schneider
+
+# linetypes
+set linetype 1 lc rgb '#ffffff' # very light blue
+set linetype 2 lc rgb '#f0f0f0' # 
+set linetype 3 lc rgb '#d9d9d9' # 
+set linetype 4 lc rgb '#bdbdbd' # light blue
+set linetype 5 lc rgb '#969696' # 
+set linetype 6 lc rgb '#737373' # medium blue
+set linetype 7 lc rgb '#525252' #
+set linetype 8 lc rgb '#252525' # dark blue
+
+# line styles
+set style line 1 lt 1 lc rgb '#ffffff' # very light blue
+set style line 2 lt 1 lc rgb '#f0f0f0' # 
+set style line 3 lt 1 lc rgb '#d9d9d9' # 
+set style line 4 lt 1 lc rgb '#bdbdbd' # light blue
+set style line 5 lt 1 lc rgb '#969696' # 
+set style line 6 lt 1 lc rgb '#737373' # medium blue
+set style line 7 lt 1 lc rgb '#525252' #
+set style line 8 lt 1 lc rgb '#252525' # dark blue
+
+# palette
+set palette defined ( 0 '#ffffff',\
+    	    	      1 '#f0f0f0',\
+		      2 '#d9d9d9',\
+		      3 '#bdbdbd',\
+		      4 '#969696',\
+		      5 '#737373',\
+		      6 '#525252',\
+		      7 '#252525' )
