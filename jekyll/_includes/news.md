@@ -16,6 +16,6 @@ Status
 ---
 The project is currently finishing the implementation phase.
 
-A live-demo is scheduled for the _15. July 2016_.
+A demo will be available latest in _August 2016_.
 
 The source code is going to be published afterwards.
