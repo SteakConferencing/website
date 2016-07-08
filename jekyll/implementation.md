@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Implementation
-date: "2016-06-28"
+date: "2016-07-08"
 ---
 
 The Implementation
@@ -26,8 +26,7 @@ In addition to stereo support, the default conference bridge of [Asterisk](http:
 
 The Code
 ---
-__Coming soon.__
-{% comment %}
+
 The source code of the STEAK project can be found on [Github](https://github.com/): [https://github.com/SteakConferencing](https://github.com/steakconferencing).
 
 This includes:
@@ -35,7 +34,6 @@ This includes:
 * the STEAK-enhanced version of [Asterisk](http://www.asterisk.org), 
 * the demo setup with [WebRTC](https://en.wikipedia.org/wiki/WebRTC) clients, and 
 * this [website](https://github.com/steakconferencing/website).
-{% endcomment %}
 
 The Details
 ---

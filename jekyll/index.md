@@ -1,7 +1,7 @@
 ---
 layout: default
 title: The Project
-date: "2016-06-23"
+date: "2016-07-08"
 ---
 
 <div class="initialAnimation"></div>
