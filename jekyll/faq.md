@@ -16,18 +16,19 @@ Yes.
 The project is funded via the [SoftwareCampus](http://www.softwarecampus.de/).
 Funding period is 2016-01-01 until 2016-12-31.
 
+
 ### Are the STEAK-modifications going to merged back to Asterisk?
 
 We hope so.
 
 It is the only option to maintain the project outcome beyond 2016-12-31.
 
+
 ### Who came up with the idea to name the project "STEAK"?
 
 An acronym generator...
 and we were keen on a fancy project name.
 
-<hr />
 
 The Demo
 ---
@@ -72,7 +73,6 @@ Please verify that this is __not__ an issue with:
 
 If your issue persists please contact create a _bug report_ ([https://github.com/steakconferencing/](https://github.com/steakconferencing/)) or contact us directly (see [About]({{ site.url }}/about)).
 
-<hr />
 
 The Website
 ---

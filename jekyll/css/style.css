@@ -92,6 +92,15 @@ body {
   letter-spacing: 0.07em;
 }
 
+h1 {
+  border-bottom: 0.01em double black;
+}
+
+h2 {
+  display: inline-block;
+  border-bottom: 0.01em dotted black;
+}
+
 @media (min-width: 0em) {
   body {
     background-color: #F2F2F2;
