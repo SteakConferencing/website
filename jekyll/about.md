@@ -16,7 +16,7 @@ It is supported by [Telekom Innovation Laboratories](http://www.laboratories.tel
 
 Contact
 ---
-If you have any questions, suggestions, or anything related to the project please get in contact with [Dennis Guse](http://dennisguse.de) by email [dennis.guse@alumni.tu-berlin.de](mailto:dennis.guse@alumni.tu-berlin.de).
+If you have any questions, suggestions, or anything related to the project please get in contact with [Dennis Guse](http://dennisguse.de) ([dennis.guse@alumni.tu-berlin.de](mailto:dennis.guse@alumni.tu-berlin.de)) and Frank Haase ([fra.haase@gmail.com](mailto:fra.haase@gmail.com)).
 
 
 Disclaimer
