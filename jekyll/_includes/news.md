@@ -9,9 +9,16 @@ For more details, please check out [The Project]({{ site.baseurl }}/project#cont
 News
 ---
 
-* _2016-07-08:_ Source code of [Asterisk modifications](https://github.com/steakconferencing/asterisk) released
-* _2016-06-30:_ Source code of [WebRTC-client](https://github.com/steakconferencing/demo-client) released 
-* _2016-06-28:_ Website online
+### _2016-07-18:_ Demo online
+
+### _2016-07-08:_ Source code released
+
+of [Asterisk modifications](https://github.com/steakconferencing/asterisk) released
+
+### _2016-06-30:_ Source code of [WebRTC-client](https://github.com/steakconferencing/demo-client) released 
+
+### _2016-06-28:_ Website online
+
 
 
 Status
