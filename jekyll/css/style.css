@@ -99,6 +99,7 @@ h1 {
 h2 {
   display: inline-block;
   border-bottom: 0.01em dotted black;
+  margin-bottom: 0;
 }
 
 @media (min-width: 0em) {
@@ -139,7 +140,6 @@ h2 {
 
   .content {
     height: 100%;
-    min-width: 35rem;
     max-width: 38rem;
     padding-left: 24rem;
     margin-right: auto;
