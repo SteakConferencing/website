@@ -9,7 +9,7 @@ reset
 set macros
 
 # png
-set terminal pngcairo size 350,263 enhanced font 'Verdana,10'
+set terminal pngcairo size 350,264 enhanced font 'Verdana,10'
 
 
 set border 0 
@@ -35,8 +35,8 @@ set xtics 1 offset 0,0.5
 set ytics 1 offset 0.5,0
 set cbtics 10 offset -0.5,0
 set cbtics add ('60 dB' 60)
-set xlabel 'x / m' offset 0,1
-set ylabel 'y / m' offset 1.5,0
+#set xlabel 'x / m' offset 0,1
+#set ylabel 'y / m' offset 1.5,0
 unset colorbox
 
 set lmargin 0

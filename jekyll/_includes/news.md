@@ -11,7 +11,6 @@ For more details, please check out:
 3. [The Implementation]({{ site.baseurl }}/implementation#content),
 4. [The Demo]({{ site.baseurl }}/demo#content).
 
-
 News <small>([RSS Feed]({{ site.baseurl }}/atom.xml))</small>
 ---
 
@@ -25,4 +24,9 @@ News <small>([RSS Feed]({{ site.baseurl }}/atom.xml))</small>
 
 Status
 ---
+<<<<<<< HEAD
 Implementation is finished and patches submitted towards the Asterisk community.
+=======
+Implementation phase is finished.
+
+Currently, the source code is prepared to be handed over to the Asterisk community ([thread on mailing list](http://lists.digium.com/pipermail/asterisk-dev/2016-July/075693.html)).
