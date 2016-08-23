@@ -1,7 +1,7 @@
 ---
 layout: default
 title: The Demo
-date: "2016-07-18"
+date: "2016-08-23"
 ---
 
 The Demo: [demo.steakconferencing.de](https://demo.steakconferencing.de)
@@ -16,23 +16,28 @@ __Requirement 1:__ The demo system can only be used with [Google Chrome](https:/
 __Requirement 2:__ A not heavily firewalled Internet connection (e.&thinsp;g., no cooperate networks).[^firewall]
 If you tried the demo system and did not hear anything (i.&thinsp;e., no incoming audio) then you might need to try a different Internet connection.
 
-[^firewall]: A firewall might allow to initiate the call (i.thinsp;e., signaling succeeds) as it is handled through [HTTPS](https://en.wikipedia.org/wiki/HTTPS).
-However, then client server try to establish [RTP](https://en.wikipedia.org/wiki/Real-time_Transport_Protocol)-connections to transmit audio.
-If the firefall prevents these connections, no audio will be received at both sides.
+[^firewall]: A firewall might allow to initiate the call (i.thinsp;e., signaling succeeds) as it is handled through [HTTPS](https://en.wikipedia.org/wiki/HTTPS). However, then client and server try to establish [RTP](https://en.wikipedia.org/wiki/Real-time_Transport_Protocol)-connections to transmit audio. If the firefall prevents these connections, no audio will be received at both sides.
 
-Beside these, just enter your desired conference number and start talking.
-
-The demo setup is be available at [demo.steakconferencing.de](https://demo.steakconferencing.de).
-
-The system is also reachable using a German land-line number: <a href="tel:+ 49-30/120-64-155">+ 49 30 / 120 64 155</a> (no spatial representation available).
-
-
-Disclaimer
+Demo
 ---
+Beside the above mentioned requirements, just enter your desired conference number and start talking.
+
+1. Go to **<big>[demo.steakconferencing.de](https://demo.steakconferencing.de)</big>** ([Google Chrome](https://www.google.com/chrome/) or [Chromium](https://www.chromium.org/)), 
+2. Allow request to use the microphone, and
+3. Select a conference room (000-999) or select a demo (demo1 or demo2).
+
+
+The demo system is also available via a German land-line number (**without spatial representation**): **<big><a href="tel:+ 49-30/120-64-155">+ 49 30 / 120 64 155</a></big>**
+
+<br />
+
+**>>Begin Disclaimer<<**
+
 The installed system is _working_, but it is not as heavily **secured** as it would be required for a &laquo;production&raquo; system.
 
 So, use the systems only to talk about things that you would consider _public!_
 
+**>>End Disclaimer<<**
 
 @Hacking
 ---
