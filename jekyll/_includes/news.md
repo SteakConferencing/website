@@ -24,9 +24,7 @@ News <small>([RSS Feed]({{ site.baseurl }}/atom.xml))</small>
 
 Status
 ---
-<<<<<<< HEAD
-Implementation is finished and patches submitted towards the Asterisk community.
-=======
+
 Implementation phase is finished.
 
 Currently, the source code is prepared to be handed over to the Asterisk community ([thread on mailing list](http://lists.digium.com/pipermail/asterisk-dev/2016-July/075693.html)).
