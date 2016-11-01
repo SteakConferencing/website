@@ -4,8 +4,15 @@ title: The Demo
 date: "2016-08-23"
 ---
 
-The Demo: [demo.steakconferencing.de](https://demo.steakconferencing.de)
+The Demo (__OFFLINE__)
 ===
+
+__Update:__ On 1st of November 2016 the demo system so far hosted reachable as [demo.steakconferencing.de](https://demo.steakconferencing.de) was permanently retired.
+
+For anybody to recreate the setup, the required configuration files (incl. SSL certificates) are now on [Github](https://github.com/SteakConferencing/demo) and the instructions to install the system can be found below.
+
+***
+
 The STEAK project provides a &laquo;prodution-ready&raquo; system, so the spatial representation can be experienced without the hassle to setup the whole system.
 For reasons of technical simplicity the system is only accessible via [WebRTC](https://webrtc.org/).
 
@@ -22,7 +29,7 @@ Demo
 ---
 Beside the above mentioned requirements, just enter your desired conference number and start talking.
 
-1. Go to **<big>[demo.steakconferencing.de](https://demo.steakconferencing.de)</big>** ([Google Chrome](https://www.google.com/chrome/) or [Chromium](https://www.chromium.org/)), 
+1. Go to **<big>[demo.steakconferencing.de](https://demo.steakconferencing.de)</big>** ([Google Chrome](https://www.google.com/chrome/) or [Chromium](https://www.chromium.org/)),
 2. Allow request to use the microphone, and
 3. Select a conference room (000-999) or select a demo (demo1 or demo2).
 
@@ -76,3 +83,53 @@ For incoming calls via the German land-line number (it is just [SIP](https://en.
 For practical reasons, the server is not available using [SIP](https://en.wikipedia.org/wiki/Session_Initiation_Protocol).
 
 The demo system uses the [Fabian HRTFs](https://github.com/SoundScapeRenderer/ssr/tree/master/data/impulse_responses/hrirs).
+
+Installation
+---
+In the following it is explained how to build the STEAK-enhanced Asterisk (v13.6.0).
+This guide was tested on [Ubuntu 16.04](http://releases.ubuntu.com/16.04/).
+
+For details about Asterisk and its building procedure please see [here](https://wiki.asterisk.org/wiki/display/AST/Building+and+Installing+Asterisk).
+
+### Software requirements
+
+* [PJSIP](http://www.pjsip.org/) (v2.4.5) ([download](http://svn.pjsip.org/repos/pjproject/tags/2.4.5/))
+* [Opus](https://www.opus-codec.org/) (v1.1)
+* [libfftw](http://www.fftw.org/) (v3.3.4)
+
+__ATTENTION:__ PJSIP must be used in version 2.4.5!
+Some patches for required in Asterisk to work with newer versions were not backported to v13.6.0.
+
+###Install requirements
+```shell
+sudo apt install build-essential subversion git
+sudo apt build-dep asterisk
+sudo apt install libopus-dev libfftw3-dev
+```
+
+__ATTENTION:__ For `build-dep` it is required to enable the source repositories. See /etc/apt/sources.lists.
+After editing run `sudo apt update`.
+
+###Build and install PJSIP v2.4.5.
+
+```shell
+svn co http://svn.pjsip.org/repos/pjproject/tags/2.4.5/
+cd 2.4.5
+./configure --prefix=/usr --enable-shared --disable-sound --disable-resample --disable-video --disable-opencore-amr CFLAGS='-O2 -DNDEBUG'
+make dep && make && sudo make install
+```
+
+###Download STEAK-enhanced Asterisk source code:
+`git clone -b steak-13.6.0 --single-branch https://github.com/steakconferencing/asterisk`
+
+###Prepare building:
+`cd asterisk && ./bootstrap && ./configure`
+
+###Configure
+`make menuselect`: disable `chan_sip` and enable `chan_pjsip`
+
+
+###Build and install:
+`make && sudo make install`
+
+###Install configuration files from [Github](https://github.com/SteakConferencing/demo)
