@@ -13,7 +13,8 @@ This system will provide a spatial representation (i.&thinsp;e., ["3D audio"](ht
 The STEAK project has two goals:
 ---
 
-###1. Implementation of a _real_ spatial conferencing system
+### 1. Implementation of a _real_ spatial conferencing system
+
 In the STEAK project, a legacy compatible spatial telephone conference system is implemented.
 If participants join a conference via [VoIP](https://en.wikipedia.org/wiki/Voice_over_IP) ([WebRTC](https://en.wikipedia.org/wiki/WebRTC) or [SIP](https://en.wikipedia.org/wiki/Session_Initiation_Protocol)) and are capable of reproducing _stereo signals_ via a pair of headphones, then a spatial presentation can be made available to them.
 This system is legacy compatible, i.&thinsp;e., so participants can also join a conference call via a standard telephone.
@@ -21,7 +22,8 @@ These participants then only receive a standard (mono-mixed) representation, whi
 
 The system will be implemented using open-source components only and the final implementation is going to be released as open-source.
 
-###2. Research on advantages of spatial conferencing
+### 2. Research on advantages of spatial conferencing
+
 Spatial representation for telephone conferencing is expected to reduce the effort for participants to follow the conversation.
 In the context of the STEAK project, we are going to investigate if telephony-related artifacts, such as background noise, can be attributed to individual participants of a telephone conference.
 

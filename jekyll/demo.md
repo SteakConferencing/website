@@ -1,6 +1,6 @@
 ---
 layout: default
-title: The Demo
+title: The Demo (Offline)
 date: "2016-08-23"
 ---
 
